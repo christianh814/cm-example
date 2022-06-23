@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app: sample-php
+    app.kubernetes.io/instance: myapp
+  name: sample-php
+  namespace: myns
+spec:
+  ports:
+  - port: 8080
+    protocol: TCP
+    targetPort: 8080
+  selector:
+    app: sample-php
+status:
+  loadBalancer: {}

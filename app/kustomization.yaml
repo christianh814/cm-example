@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: myns
 
 resources:
-- cm.yaml
-- deploy.yaml
 - ns.yaml
+- cm.yaml
+- service.yaml
+- deploy.yaml

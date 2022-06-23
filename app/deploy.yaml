@@ -3,24 +3,24 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: welcome-php
-  name: welcome-php
+    app: sample-php
+  name: sample-php
   namespace: myns
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: welcome-php
+      app: sample-php
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: welcome-php
+        app: sample-php
     spec:
       containers:
-      - image: quay.io/redhatworkshops/welcome-php:latest
-        name: welcome-php
+      - image: quay.io/christianh814/sample-php:latest
+        name: sample-php
         volumeMounts:
         - name: config-vol
           mountPath: /etc/myapp
