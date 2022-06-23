@@ -19,7 +19,7 @@ spec:
         app: sample-php
     spec:
       containers:
-      - image: quay.io/christianh814/sample-php:latest
+      - image: docker.io/christianh814/sample-php:latest
         name: sample-php
         volumeMounts:
         - name: config-vol
