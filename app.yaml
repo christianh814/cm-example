@@ -1,18 +1,26 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: pricelist-app
+  name: myapp
   namespace: argocd
 spec:
   destination:
-    namespace: argocd
+    namespace: myns
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: app-of-apps/apps
-    repoURL: https://github.com/christianh814/gitops-examples
-    targetRevision: master
+    path: app/
+    repoURL: https://github.com/christianh814/cm-example
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
       selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        maxDuration: 3m0s
+        factor: 2
