@@ -5,22 +5,5 @@ metadata:
   namespace: myns
 data:
   test.conf: |
-    title = "Example CHANGE v3"
-
-    [owner]
-    name = "John Doe"
-    dob = 1979-05-27T07:32:00-08:00
-
-    [database]
-    enabled = true
-    ports = [ 8000, 8001, 8002 ]
-
-    [servers]
-
-    [servers.alpha]
-    ip = "10.0.0.1"
-    role = "frontend"
-
-    [servers.beta]
-    ip = "10.0.0.2"
-    role = "backend"
+    title = "Example Config"\n
+    version = "v1"\n
