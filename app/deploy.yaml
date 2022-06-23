@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: welcome-php
+  name: welcome-php
+  namespace: myns
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: welcome-php
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: welcome-php
+    spec:
+      containers:
+      - image: quay.io/redhatworkshops/welcome-php:latest
+        name: welcome-php
+        volumeMounts:
+        - name: config-vol
+          mountPath: /etc/myapp
+        resources: {}
+      volumes:
+        - name: config-vol
+          configMap:
+            name: myconfig
