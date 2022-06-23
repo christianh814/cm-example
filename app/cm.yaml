@@ -5,7 +5,7 @@ metadata:
   namespace: myns
 data:
   test.conf: |
-    title = "Example CHANGE v2"
+    title = "Example CHANGE v3"
 
     [owner]
     name = "John Doe"
