@@ -5,5 +5,5 @@ metadata:
   namespace: myns
 data:
   test.conf: |
-    title = "Example Config"\n
-    version = "v1"\n
+    title = "Example Config"
+    version = "v1"
