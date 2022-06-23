@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: myns
 
 commonAnnotations:
-  sample-php/version: v7
+  sample-php/version: v9
 
 resources:
 - ns.yaml
