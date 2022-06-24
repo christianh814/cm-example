@@ -6,4 +6,4 @@ metadata:
 data:
   test.conf: |
     title = "Example Config"
-    version = "v14"
+    version = "v15"
