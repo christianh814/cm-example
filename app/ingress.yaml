@@ -2,6 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
+    haproxy.org/path-rewrite: "/"
     ingress.kubernetes.io/ssl-redirect: "false"
     kubernetes.io/ingress.class: "haproxy"
   labels:
