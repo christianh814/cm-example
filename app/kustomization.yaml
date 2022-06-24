@@ -10,4 +10,4 @@ resources:
 - ingress.yaml
 
 commonAnnotations:
-  sample-php/version: v18
+  sample-go/version: v1

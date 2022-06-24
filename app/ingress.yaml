@@ -5,18 +5,18 @@ metadata:
     ingress.kubernetes.io/ssl-redirect: "false"
     kubernetes.io/ingress.class: "haproxy"
   labels:
-    app: sample-php
-  name: sample-php-ingress
+    app: sample-go
+  name: sample-go-ingress
   namespace: myns
 spec:
   rules:
-  - host: sample-php.127.0.0.1.nip.io
+  - host: sample-go.127.0.0.1.nip.io
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: sample-php
+            name: sample-go
             port:
               number: 8080

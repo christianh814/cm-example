@@ -3,24 +3,24 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: sample-php
-  name: sample-php
+    app: sample-go
+  name: sample-go
   namespace: myns
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-php
+      app: sample-go
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: sample-php
+        app: sample-go
     spec:
       containers:
-      - image: quay.io/christianh814/sample-php:latest
-        name: sample-php
+      - image: quay.io/christianh814/simple-go:latest
+        name: sample-go
         volumeMounts:
         - name: config-vol
           mountPath: /etc/myapp

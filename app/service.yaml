@@ -3,9 +3,9 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: sample-php
+    app: sample-go
     app.kubernetes.io/instance: myapp
-  name: sample-php
+  name: sample-go
   namespace: myns
 spec:
   ports:
@@ -13,6 +13,6 @@ spec:
     protocol: TCP
     targetPort: 8080
   selector:
-    app: sample-php
+    app: sample-go
 status:
   loadBalancer: {}
