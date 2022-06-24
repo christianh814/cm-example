@@ -3,10 +3,11 @@ kind: Kustomization
 namespace: myns
 
 commonAnnotations:
-  sample-php/version: v13
+  sample-php/version: v14
 
 resources:
 - ns.yaml
 - cm.yaml
 - service.yaml
 - deploy.yaml
+- ingress.yaml
