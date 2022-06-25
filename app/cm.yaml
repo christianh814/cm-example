@@ -7,4 +7,5 @@ data:
   test.conf: |
     title = "Example Config"
     enableAwesome = "true"
-    version = "v1.3"
+    debugMode = "false"
+    version = "v1.4"
