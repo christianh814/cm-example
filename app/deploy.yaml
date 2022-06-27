@@ -24,6 +24,27 @@ spec:
         volumeMounts:
         - name: config-vol
           mountPath: /etc/myapp
+        env:
+          - name: MYAPP_NODE
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.nodeName
+          - name: MYAPP_NODEIP
+            valueFrom:
+              fieldRef:
+                fieldPath: spec.hostIP
+          - name: MYAPP_NAME
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.name
+          - name: MYAPP_UID
+            valueFrom:
+              fieldRef:
+                fieldPath: metadata.uid
+          - name: MYAPP_IP
+            valueFrom:
+              fieldRef:
+                fieldPath: status.podIP
         resources: {}
       volumes:
         - name: config-vol
