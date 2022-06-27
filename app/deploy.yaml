@@ -29,10 +29,6 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: spec.nodeName
-          - name: MYAPP_NODEIP
-            valueFrom:
-              fieldRef:
-                fieldPath: spec.hostIP
           - name: MYAPP_NAME
             valueFrom:
               fieldRef:
