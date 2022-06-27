@@ -33,10 +33,6 @@ spec:
             valueFrom:
               fieldRef:
                 fieldPath: metadata.name
-          - name: MYAPP_UID
-            valueFrom:
-              fieldRef:
-                fieldPath: metadata.uid
           - name: MYAPP_IP
             valueFrom:
               fieldRef:
