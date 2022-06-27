@@ -6,9 +6,8 @@ resources:
 - ns.yaml
 - cm.yaml
 - service.yaml
-- sealedsecret.yaml
 - deploy.yaml
 - ingress.yaml
 
 commonAnnotations:
-  sample-go/version: v2
+  sample-go/version: v1
