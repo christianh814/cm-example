@@ -6,6 +6,7 @@ resources:
 - ns.yaml
 - cm.yaml
 - service.yaml
+- sealedsecret.yaml
 - deploy.yaml
 - ingress.yaml
 
