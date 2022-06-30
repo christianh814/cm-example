@@ -10,4 +10,4 @@ resources:
 - ingress.yaml
 
 commonAnnotations:
-  sample-go/version: v3
+  sample-go/version: v1
